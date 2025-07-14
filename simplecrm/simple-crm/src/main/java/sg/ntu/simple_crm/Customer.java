@@ -1,8 +1,6 @@
 package sg.ntu.simple_crm;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Customer {
 
     private String id;
@@ -12,6 +10,17 @@ public class Customer {
     private String contactNo;
     private String jobTitle;
     private int yearofBirth;
+
+    //Constructor
+    public Customer(String id, String firstName, String lastName, String email, String contactNo, String jobTitle, int yearOfBirth) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.contactNo = contactNo;
+        this.jobTitle = jobTitle;
+        this.yearofBirth = yearOfBirth;
+    }
 
 
     //Getters and Setters
